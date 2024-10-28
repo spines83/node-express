@@ -2,7 +2,7 @@ apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
   name: node-express
-  namespace: default
+  namespace: test-app
   labels:
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
@@ -10,6 +10,6 @@ metadata:
 spec:
   source:
     git:
-      url: <https URL for your generated project's Git repository>
+      url: https://github.com/spines83/node-express 
       ref:
         branch: main
