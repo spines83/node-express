@@ -1,0 +1,21 @@
+id: 1b8850f2-77ce-4d94-91b5-6941135ea9af
+timestamp: 2024-10-28T15:58:39.017Z
+source: TAP-GUI
+username: guest
+options:
+  projectName: node-express
+  includeTap: true
+accelerator:
+  name: node-express
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+    subPath: node-express
+    ref: tap-og
+    commit: 3d9af1c116314db20f5cc125108219709010b249
+fragments:
+  - name: tap-workload
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/tap-workload
+      ref: tap-og
+      commit: 3d9af1c116314db20f5cc125108219709010b249
